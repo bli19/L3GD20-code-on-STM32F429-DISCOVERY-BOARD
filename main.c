@@ -30,10 +30,10 @@ void Delaimes(int Count);
 int main(void)
 {
 //   uint8_t R;
-//   uint8_t buf[10];
-//	 uint8_t buf_1[10];
-//	 uint8_t buf_2[10];
-//   float pdd[3];
+   uint8_t buf[10];
+   uint8_t buf_1[10];
+   uint8_t buf_2[10];
+   float pdd[3];
   /* STM32F4xx HAL library initialization:
        - Configure the Flash prefetch, instruction and Data caches
        - Configure the Systick to generate an interrupt each 1 msec
@@ -47,7 +47,7 @@ int main(void)
   /* Configure the transparency for foreground : Increase the transprency */
   BSP_LCD_SetTransparency(LCD_BACKGROUND_LAYER, 0);
   BSP_LCD_SelectLayer(LCD_FOREGROUND_LAYER);
- // BSP_GYRO_Init();
+  BSP_GYRO_Init();
 	//R=BSP_GYRO_ReadID();
 	
 	/* Configure the System clock to have a frequency of 180 MHz */
